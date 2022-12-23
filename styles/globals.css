@@ -44,6 +44,24 @@ nav div {
   width: 75%;
   text-align: center;
   letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+.title h1 span {
+  animation: changecolor 5s linear infinite;
+}
+@keyframes changecolor {
+  0%{
+    color: blanchedalmond;
+  }
+  33%{
+    color: rgb(119, 7, 33);
+  }
+  66%{
+    color: rgb(9, 9, 106)
+  }
+  100%{
+    color: blanchedalmond;
+  }
 }
 .carda-container {
   display: flex;
@@ -58,6 +76,19 @@ nav div {
   margin-left: 10px;
   margin-top: 2px;
   margin-bottom: 2px;
+  scale: 1;
+  transition: scale 300ms;
+}
+.cardashan:hover {
+  animation: scalecard 300ms linear 1 forwards;
+}
+@keyframes scalecard {
+  0%{
+    scale: 1;
+  }
+  100%{
+    scale: 1.02;
+  }
 }
 .cardashan h2{
   font-size: 1rem;
@@ -116,7 +147,7 @@ svg {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 150px;
 }
 .next-item div {
   width: 50%;
@@ -131,7 +162,7 @@ svg {
   opacity: 1;
   transition: opacity 300ms;
   cursor: pointer;
-  border: 1px dotted white;
+  border: 1px solid rgb(9, 9, 106);
   transition: border 1s;
 }
 .next-item div:hover a {

@@ -1,4 +1,5 @@
 
+import Link from "next/link"
 import Peoples from "./components/peoples"
 import Planets from "./components/planets"
 
@@ -13,7 +14,7 @@ export  default function HomePage () {
         
         <div className="d-flex text-center justify-content-center">
         <div className="title" >
-            <h1 >Welcome to the Star Wars Blog by: Charlytoc</h1>
+            <h1 >Welcome to the Star Wars Blog by: <span><Link href={"https://www.linkedin.com/in/charlytoc/"} >Charlytoc</Link></span></h1>
         </div>
         </div>
         <h1>
