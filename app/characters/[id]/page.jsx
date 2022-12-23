@@ -3,6 +3,7 @@ import axios from "axios"
 import { use, useEffect } from "react"
 import { useState } from "react"
 import Image from "next/image"
+import Link from "next/link"
 
 export default function AboutCharacters ({params}) {
     const [people, setPeople] = useState([])
@@ -30,7 +31,7 @@ export default function AboutCharacters ({params}) {
 
     return <>
     {/* <p>{params.id}</p> */}
-    <button onClick={()=>console.log(people)}>VER QUE GUARDO</button>
+    {/* <button onClick={()=>console.log(people)}>VER QUE GUARDO</button> */}
     <div className="info-container">
         <h1>{people.name}</h1>
         <Image src={`https://starwars-visualguide.com/assets/img/characters/${params.id}.jpg`} width={200} height={200} alt=".." />
@@ -40,6 +41,10 @@ export default function AboutCharacters ({params}) {
         <h2>Is this character tall or not? You decide it. Height: {people.height}</h2>
         <h2>This character's gender is: {people.gender}</h2>
         <h2></h2>
+    </div>
+    <div className="next-item">
+      <div><Link href={`/characters/${parseInt(params.id) + 1}`}>Continue reading the next character</Link></div>
+      {parseInt(params.id) > 1 ? <div><Link href={'/characters/1'}>Return to the beginning</Link></div> : null}
     </div>
     </>
 }

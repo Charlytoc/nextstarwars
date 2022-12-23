@@ -20,7 +20,7 @@ body {
   background: linear-gradient(2deg, rgb(63, 3, 71), rgb(1, 1, 47))
 }
 a {
-  color: inherit;
+  color: rgb(188, 166, 222)  ;
   text-decoration: none;
 }
 
@@ -48,6 +48,7 @@ nav div {
 .carda-container {
   display: flex;
   overflow-x: scroll;
+  padding: 5px;
 }
 .cardashan {
   /* background-color: beige; */
@@ -71,7 +72,7 @@ nav div {
 }
 /* Style the scrollbar itself */
 ::-webkit-scrollbar {
-  width: 15px;
+  width: 30px;
   background: linear-gradient(180deg, rgb(63, 3, 71), rgb(1, 1, 47))
 }
 
@@ -108,4 +109,32 @@ nav div {
 }
 svg {
   border-radius: 4px;
+}
+.next-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+.next-item div {
+  width: 50%;
+  color: rgb(9, 9, 106);
+  padding: 25px;
+  
+  background-color: #ff00bb17;
+  opacity: 0.5;
+  transition: opacity 300ms;
+}
+.next-item div:hover {
+  opacity: 1;
+  transition: opacity 300ms;
+  cursor: pointer;
+  border: 1px dotted white;
+  transition: border 1s;
+}
+.next-item div:hover a {
+  color: red;
+  transition: color 200ms;
 }
