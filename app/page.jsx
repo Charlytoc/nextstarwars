@@ -1,30 +1,37 @@
 
-import HeadText from "./components/headText"
+import Peoples from "./components/peoples"
+import Planets from "./components/planets"
 
-// import BackgroundText from "./components/backgroundText"
-import SelectedProjects from "./components/selectedProject"
+import Prueba from "./components/prueba"
+import Starships from "./components/starships"
+import Vehicles from "./components/vehicles"
 
-import CallToAction from "./components/callToAction"
-import Footer from "./components/footer"
-
-export default function HomePage () {
-
+   
+export  default function HomePage () {
 
     return <>
-    <div className="row w-100">
-        <HeadText />
         
-        
-        
-        
-        <hr></hr>
-        <SelectedProjects />
-        <hr></hr>
-        <CallToAction />
-        <hr></hr>
-        <Footer />
-         
-        
-    </div>
+        <div className="d-flex text-center justify-content-center">
+        <div className="title" >
+            <h1 >Welcome to the Star Wars Blog by: Charlytoc</h1>
+        </div>
+        </div>
+        <h1>
+            Characters
+        </h1>
+        <Peoples />
+        <h1>
+            Planets
+        </h1>
+        <Planets />
+        <h1>
+            Starships
+        </h1>
+        <Starships />
+        <h1>
+            Vehicles
+        </h1>
+        <Vehicles />
+
     </>
 }
