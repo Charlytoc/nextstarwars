@@ -14,7 +14,7 @@ body {
   max-width: 100%;
   justify-content: center;
   text-align: center;
-  min-height: 150vh;
+  min-height: 100vh;
   font-family: var(--font-one);
   color: rgb(188, 166, 222);
   background: linear-gradient(2deg, rgb(63, 3, 71), rgb(1, 1, 47))
@@ -35,6 +35,7 @@ nav {
 nav div {
   /* background-color: aqua; */
   padding: 1rem;
+  cursor: pointer;
 }
 .title {
   font-family: var(--font-two);
@@ -103,7 +104,8 @@ nav div {
 }
 /* Style the scrollbar itself */
 ::-webkit-scrollbar {
-  width: 30px;
+  width: 10px;
+  height: 10px;
   background: linear-gradient(180deg, rgb(63, 3, 71), rgb(1, 1, 47))
 }
 
@@ -126,9 +128,10 @@ nav div {
 }
 .info-container h1 {
   background-color: #ff00bb17;
-  font-size: 2rem;
+  font-size: 3rem;
   letter-spacing: 5px;
   padding: 3px;
+  border-radius: 4px;
 }
 .info-container h2 {
   /* background-color: aqua; */
@@ -137,6 +140,10 @@ nav div {
   font-size: 1.5rem;
   padding: 3px;
   letter-spacing: 1px;
+  border-radius: 4px;
+}
+.info-container img {
+  border-radius: 4px;
 }
 svg {
   border-radius: 4px;
@@ -148,12 +155,13 @@ svg {
   justify-content: center;
   align-items: center;
   margin-top: 150px;
+  
 }
 .next-item div {
   width: 50%;
   color: rgb(9, 9, 106);
   padding: 25px;
-  
+  border-radius: 4px;
   background-color: #ff00bb17;
   opacity: 0.5;
   transition: opacity 300ms;
@@ -168,4 +176,38 @@ svg {
 .next-item div:hover a {
   color: red;
   transition: color 200ms;
+}
+#placeholder-menu {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(2deg, rgb(63, 3, 71), rgb(1, 1, 47)) ;
+  position: absolute;
+  z-index: 3;
+}
+.menu {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.menu h2 {
+  font-size: 12vmin;
+  opacity: 1;
+}
+.menu h2 a:hover {
+  opacity: 1;
+  color: rgb(255, 255, 255);
+}
+.menu div {
+  position: absolute;
+  top: 5vmin;
+  right: 5vmin;
+  font-size: 5vmin;
+  opacity: 0.4;
+}
+.menu div:hover {
+  opacity: 1;
+  cursor: pointer;
 }

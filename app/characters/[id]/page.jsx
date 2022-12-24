@@ -33,7 +33,7 @@ export default function AboutCharacters ({params}) {
     {/* <p>{params.id}</p> */}
     {/* <button onClick={()=>console.log(people)}>VER QUE GUARDO</button> */}
     <div className="info-container">
-        <h1>{people.name}</h1>
+        <div><h1>{people.name}</h1></div>
         <Image src={`https://starwars-visualguide.com/assets/img/characters/${params.id}.jpg`} width={200} height={200} alt=".." />
         <h2>This character was born in {people.birth_year}</h2>
         <h2>The eyes of this character are of color: <span style={{color: `${people.eye_color}`}}>{people.eye_color}</span></h2>
