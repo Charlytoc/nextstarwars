@@ -24,7 +24,7 @@ export default function Planets () {
 
     return <>
     <div className="carda-container">
-        {people.map((item, index) => <div><People uid={item.uid} type={'planets'} name={item.name} /></div>)}
+        {people.map((item, index) => <div key={index}><People uid={item.uid} type={'planets'} name={item.name} /></div>)}
         </div>
     </>
 }

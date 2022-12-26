@@ -34,8 +34,12 @@ nav {
 }
 nav div {
   /* background-color: aqua; */
-  padding: 1rem;
+  padding: 4vmin;
   cursor: pointer;
+  font-size: 5vmin;
+}
+nav div span {
+  margin-left: 5vmin;
 }
 .title {
   font-family: var(--font-two);
@@ -97,8 +101,9 @@ nav div {
 
 .cardashan div {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
+
 .cardashan img {
   border-radius: 10%;
 }
@@ -134,7 +139,7 @@ nav div {
   border-radius: 4px;
 }
 .info-container h2 {
-  /* background-color: aqua; */
+  display: block;
   background-color: #ff00bb17;
   margin-top: 5px;
   font-size: 1.5rem;
@@ -154,7 +159,7 @@ svg {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 150px;
+  margin-top: 200px;
   
 }
 .next-item div {
@@ -165,6 +170,7 @@ svg {
   background-color: #ff00bb17;
   opacity: 0.5;
   transition: opacity 300ms;
+  margin-top: 2px;
 }
 .next-item div:hover {
   opacity: 1;
@@ -202,8 +208,8 @@ svg {
 }
 .menu div {
   position: absolute;
-  top: 5vmin;
-  right: 5vmin;
+  top: 4vmin;
+  right: 4vmin;
   font-size: 5vmin;
   opacity: 0.4;
 }

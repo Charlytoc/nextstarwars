@@ -9,6 +9,6 @@ export default function People ({name, type, uid}) {
                 <Image src={`https://starwars-visualguide.com/assets/img/${type}/${uid}.jpg`} width={200} height={200} alt=".." />
                 <div>
                 <Link href={`/${type}/${uid}`}>Learn more</Link>
-                <p>Read later</p></div>
+                </div>
             </div></>
 }
