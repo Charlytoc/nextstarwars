@@ -17,9 +17,9 @@ export default function Placeholder () {
         
         <div className="menu">
         <div onClick={()=>{addClass()}}>Close</div>
-        <h2><Link href={'/'} >Github</Link></h2>
-        <h2><Link href={'/'} >Instagram</Link></h2>
-        <h2><Link href={'/'} >Linkedin</Link></h2>
-        <h2><Link href={'/'} >Contact</Link></h2>
+        <h2><Link href={'https://github.com/Charlytoc'} >Github</Link></h2>
+        <h2><Link href={'https://www.instagram.com/charlytoc/'} >Instagram</Link></h2>
+        <h2><Link href={'https://www.linkedin.com/in/charlytoc/'} >Linkedin</Link></h2>
+        <h2><Link href={'/contact'} >Contact</Link></h2>
         </div></>
 }

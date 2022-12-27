@@ -25,7 +25,7 @@ export default function Peoples () {
 
     return <>
     <div className="carda-container">
-      <button >GOL</button>
+      
         {people.map((item, index) => <div key={index}><People type={"characters"} uid={item.uid} name={item.name} /></div>)}
         </div>
     </>

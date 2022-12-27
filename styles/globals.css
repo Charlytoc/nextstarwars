@@ -226,18 +226,32 @@ svg {
 }
 #footer div {
   width: 50vw;
-  padding: 5vmin;
+  padding: 3vmin;
 }
 #footer div h1 {
   /* background-color: blanchedalmond; */
-  font-size: 7vmin;
+  font-size: 4vmin;
   /* color: var(--font-clr); */
 }
 #footer div h2 {
-  font-size: 5vmin;
+  font-size: 3vmin;
   /* color: var(--clr-two) */
 }
 #footer div h3 {
   color: blanchedalmond;
-  font-size: 6vmin;
+  font-size: 4vmin;
+}
+#contact h1 {
+  color: blanchedalmond;
+}
+#contact h2 {
+  color: var(--clr-one);
+}
+#contact h2 span {
+  color: var(--clr-two);
+  opacity: 0.8;
+}
+#contact h2 span:hover {
+  color: blanchedalmond;
+  opacity: 1;
 }
