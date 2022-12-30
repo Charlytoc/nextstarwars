@@ -5,6 +5,7 @@ import Placeholder from "./components/placeholder"
 import Footer from "./components/footer"
 // import {  createContext } from "react"
 // import AppContext from "./components/AppContext"
+import "../styles/game.css"
 export default function RootLayout({ children }) {
   
 

@@ -1,4 +1,3 @@
-
 import Link from "next/link"
 import Peoples from "./components/peoples"
 import Planets from "./components/planets"

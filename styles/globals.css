@@ -37,10 +37,10 @@ nav {
 
 }
 nav div {
-  /* background-color: aqua; */
   padding: 4vmin;
   cursor: pointer;
   font-size: 5vmin;
+  /* background-color: aqua; */
 }
 nav div span {
   margin-left: 5vmin;
@@ -222,25 +222,32 @@ svg {
   cursor: pointer;
 }
 #footer {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(200px, 2fr));
+  /* position: sticky; */
+  margin-top: 20px;
+  /* bottom: 0px; */
+  /* flex-wrap: wrap-reverse; */
+  /* background-color: cadetblue; */
 }
+
 #footer div {
-  width: 50vw;
-  padding: 3vmin;
+  padding: 1vmin;
+  /* background-color: aqua; */
 }
 #footer div h1 {
   /* background-color: blanchedalmond; */
-  font-size: 4vmin;
-  /* color: var(--font-clr); */
-}
+  font-size: 3vmin;
+  color: var(--font-clr); } 
+
 #footer div h2 {
   font-size: 3vmin;
-  /* color: var(--clr-two) */
-}
+  color: var(--clr-two) 
+ }
 #footer div h3 {
   color: blanchedalmond;
-  font-size: 4vmin;
-}
+  font-size: 3vmin;
+} 
 #contact h1 {
   color: blanchedalmond;
 }
