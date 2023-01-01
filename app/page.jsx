@@ -2,7 +2,7 @@ import Link from "next/link"
 import Peoples from "./components/peoples"
 import Planets from "./components/planets"
 
-import Prueba from "./components/prueba"
+// import Prueba from "./components/prueba"
 import Starships from "./components/starships"
 import Vehicles from "./components/vehicles"
 
