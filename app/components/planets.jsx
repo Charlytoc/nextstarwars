@@ -1,25 +1,15 @@
-"use client"
-import axios from "axios"
 
-import { use, useEffect } from "react"
-
-import { useState } from "react"
 import People from "./peoplecard"
+const fetching = () => {
+  return fetch('https://www.swapi.tech/api/planets/')
+  .then((response) => 
+      response.json()
+  )
+  .then((res) => res.results)
+    }
 
-
-export default function Planets () {
-    const [people, setPeople] = useState([])
-
-    const fetching = async () => {
-    return await axios.get('https://www.swapi.tech/api/planets/')
-    .then((response) => {
-        setPeople(response.data.results)
-    })
-    .catch((error) => {
-      console.log(error);
-    })
-      }
-    useEffect(()=>{fetching()}, [])
+export default async function Planets () {
+  const people = await fetching()
    
 
     return <>
