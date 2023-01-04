@@ -35,14 +35,16 @@ export default function Game () {
               }
         
     }
-
+    const start = () => {
+        
+    }
 
     useEffect(()=>{
         window.addEventListener("keydown", (e)=>{moveStarship(e)})
     }, [])
     return <>
     <div className="game">
-        <button onClick={()=>shoot()}>DISPARAR</button>
+        <button onClick={()=>start()}>Start</button>
         <div className="scenario">
             <div className="starship"></div>
         </div>
