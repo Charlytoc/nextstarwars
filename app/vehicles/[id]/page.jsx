@@ -10,17 +10,6 @@ export default function AboutVehicles ({params}) {
 
     const fetching = async () => {
 
-
-        // climate /
-        // diameter
-        // gravity
-        // name
-        // orbital_period
-        // population
-        // rotation_period
-        // surface_water
-        // terrain
-
     return await axios.get(`https://www.swapi.tech/api/vehicles/${params.id}`)
     .then((response) => {
         setvehicles(response.data.result.properties)
@@ -30,20 +19,7 @@ export default function AboutVehicles ({params}) {
     })
       }
     useEffect(()=>{fetching()}, [])
-   
-
-    /* 
-    cargo_capacity
-cost_in_credits
-
-crew
-films
-length
-manufacturer
-
- */
     return <>
-    {/* <button onClick={()=>console.log(vehicles)}>VER QUE GUARDO</button> */}
     <div className="info-container">
         <div><h1>{vehicles.name}</h1></div>
         <Image src={`https://starwars-visualguide.com/assets/img/vehicles/${params.id}.jpg`} width={200} height={200} alt=".." />

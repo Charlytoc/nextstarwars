@@ -2,20 +2,19 @@
 import Link from "next/link"
 import { useEffect, useState } from "react"
 export default function Navbar () {
-  // const [favorites, setFavorites] = useState(JSON.parse(localStorage.getItem('favorites')))
-  // const addClass = () => {
-  //   let elem = document.getElementById("placeholder-menu")
-  //   let all = document.getElementById("mr-all")
-  //   if (elem.style.display == "none") {
-  //     elem.style.display = "block"
-  //     all.style.display = "none"
-  //   }
-  //   else {
-  //     elem.style.display = "none"
-  //     all.style.display = "block"
-  //   }
+  const addClass = () => {
+    let elem = document.getElementById("placeholder-menu")
+    let all = document.getElementById("mr-all")
+    if (elem.style.display == "none") {
+      elem.style.display = "block"
+      all.style.display = "none"
+    }
+    else {
+      elem.style.display = "none"
+      all.style.display = "block"
+    }
     
-  // }
+  }
 
 
     return <>
